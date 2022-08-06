@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body css  */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d4d5d6;
+}
+
+/* main container css start  */
+.main-container {
+    max-width: 600px;
+    box-shadow: 0 0 10px #939596;
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem auto;
+    border-radius: 5px;
+    align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .maintk input,
+    .parcenttk input,
+    .person input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-container {
+        margin: 1rem 10px;
+    }
+}
+
+.maintk,
+.parcenttk,
+.person {
+    padding: 5px 0;
+}
+
+.maintk label,
+.parcenttk label,
+.person label {
+    color: #2e2e2e;
+    font-weight: bold;
+}
+
+.maintk input,
+.parcenttk input,
+.person input {
+    padding: 15px 10px;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.err {
+    border: 2px solid red;
+}
+
+.right-side {
+    text-align: center;
+}
+
+.top-side p,
+.bottom-side p {
+    font-size: 12px;
+    color: #4b4b4b;
+}
+
+.right-side h1 {
+    color: #2e2e2e;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.bottom-side {
+
+    padding-top: 1.5rem;
+}
